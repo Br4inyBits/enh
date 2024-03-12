@@ -1,7 +1,7 @@
 const nav = document.querySelector(".nav");
 
 const hero = document.querySelector(".hero");
-const heroTitle = document.querySelectorAll(".hero__title > h1");
+const heroTitle = hero.querySelectorAll(".hero__title > h1");
 const heroGallery = hero.querySelector(".hero__gallery");
 const heroFrames = hero.querySelectorAll(".hero_gallery_frame");
 
@@ -12,7 +12,7 @@ const initHero = () => {
     autoAlpha: 0,
   });
   gsap.set(heroTitle, {
-    y: "-100%",
+    y: '-100%',
   });
   gsap.set(heroFrames, {
     height: 0,
