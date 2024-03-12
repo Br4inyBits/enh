@@ -1,7 +1,7 @@
 const nav = document.querySelector(".nav");
 
 const hero = document.querySelector(".hero");
-const heroTitle = hero.querySelectorAll(".hero__title > h1");
+const heroTitle = document.querySelectorAll(".hero__title > h1");
 const heroGallery = hero.querySelector(".hero__gallery");
 const heroFrames = hero.querySelectorAll(".hero_gallery_frame");
 
