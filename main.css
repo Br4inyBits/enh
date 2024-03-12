@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #d5e7f6;
+  --secondary: #0b0b0b;
+}
+
+::selection {
+  background-color: greenyellow;
+}
+
+html {
+  font-size: max(100vw / 1920 * 10);
+}
+
+body {
+  font-family: "Philosopher", sans-serif;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.nav_title {
+  font-size: 2rem;
+}
+
+.nav_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  padding: 3rem;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+}
+
+.hero_gallery {
+  position: relative;
+  width: 100%;
+  height: 88rem;
+  perspective: 1000px;
+}
+
+.hero_gallery_frame {
+  position: absolute;
+  border: 1px solid var(--secondary);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: var(--primary);
+  filter: drop-shadow(0px 1.125px 26px rgba(0, 0, 0, 0.15));
+  width: auto;
+  height: auto;
+}
+
+.hero_gallery_frame:nth-child(1) {
+  top: 10.3rem;
+  left: 71.3rem;
+  z-index: 1;
+}
+
+.hero_gallery_frame:nth-child(2) {
+  top: 2rem;
+  left: 10rem;
+}
+
+.hero_gallery_frame:nth-child(3) {
+  top: 20rem;
+  left: 42rem;
+  z-index: 2;
+}
+
+.hero_gallery_frame:nth-child(4) {
+  top: 0rem;
+  right: 19.6rem;
+}
+
+.hero_gallery_frame:nth-child(5) {
+  top: 39rem;
+  right: 42rem;
+}
+
+.hero_gallery_frame:nth-child(6) {
+  top: 43rem;
+  right: 10rem;
+}
+
+.hero_gallery_frame:nth-child(7) {
+  top: 52.5rem;
+  left: 19.6rem;
+}
+
+.hero_gallery_frame_figure {
+  position: relative;
+}
+
+.hero_gallery_frame:nth-child(1) .hero_gallery_frame_figure {
+  width: 49.5rem;
+  height: 67.5rem;
+}
+
+.hero_gallery_frame:nth-child(2) .hero_gallery_frame_figure {
+  width: 33rem;
+  height: 45rem;
+}
+
+.hero_gallery_frame:nth-child(3) .hero_gallery_frame_figure {
+  width: 30rem;
+  height: 30rem;
+}
+
+.hero_gallery_frame:nth-child(4) .hero_gallery_frame_figure {
+  width: 62rem;
+  height: 36rem;
+}
+
+.hero_gallery_frame:nth-child(5) .hero_gallery_frame_figure {
+  width: 30rem;
+  height: 30rem;
+}
+
+.hero_gallery_frame:nth-child(6) .hero_gallery_frame_figure {
+  width: 33rem;
+  height: 45rem;
+}
+
+.hero_gallery_frame:nth-child(7) .hero_gallery_frame_figure {
+  width: 62rem;
+  height: 36rem;
+}
+
+.hero_gallery_frame_image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero_gallery_frame:nth-child(1) .hero_gallery_frame_image {
+  object-position: 0 0;
+}
+
+.hero_gallery_frame:nth-child(2) .hero_gallery_frame_image {
+  object-position: 0 0;
+}
+
+.hero_gallery_frame:nth-child(3) .hero_gallery_frame_image {
+  object-position: 0 0;
+  transform: scaleX(-1);
+}
+
+.hero_gallery_frame:nth-child(4) .hero_gallery_frame_image {
+  object-position: 0 0;
+  transform: scaleX(-1);
+}
+
+.hero_gallery_frame:nth-child(5) .hero_gallery_frame_image {
+  object-position: 0 0;
+  transform: scaleX(-1);
+}
+
+.hero_gallery_frame:nth-child(6) .hero_gallery_frame_image {
+  object-position: 0 0;
+}
+
+.hero_gallery_frame:nth-child(7) .hero_gallery_frame_image {
+  object-position: 0 8%;
+}
+
+.hero_title {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 10;
+  mix-blend-mode: difference;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_title h1 {
+  font-size: 18rem;
+  text-align: center;
+  color: #eeeeee;
+}
