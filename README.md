@@ -10,4 +10,4 @@ This project combines 3D perspective and interactive mouse movement animations u
 **Deploy :** `Vercel App`
 
 
-[![site](https://img.shields.io/badge/view_site-000?style=for-the-badge&logo=codemagic&logoColor=C3E628)](https://enh.vercel.app/)
+[![site](https://img.shields.io/badge/view_site-000?style=for-the-badge&logo=codemagic&logoColor=ff0000)](https://enh.vercel.app/)
